@@ -125,10 +125,10 @@ const postLog=async(req,res)=>{
 const viewUser=async(req,res)=>{
     try{
         let view_details=req.user.userdata;
-        return res.status(201).json({
+        return res.status(200).json({
             success:true,
             message:"User details fetch successfully",
-            status:201,
+            status:200,
             result:view_details,
         });
     }
